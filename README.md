@@ -11,6 +11,12 @@ $ java -jar target/dropwizard-with-sse-0.0.1-SNAPSHOT.jar server \
   src/test/resources/config.yaml
 ```
 
+* Open browser:
+
+```
+http://localhost:8080/index
+```
+
 * Open a new terminal and execute:
 
 ```
@@ -23,11 +29,9 @@ $ curl localhost:8080/sse -H"Accept: text/event-stream"
 $ curl localhost:8080/publish?msg=HelloWorld
 ```
 
-* You should see the following i terminal 2:
+* You should see the following in terminal and browser:
 
 ```
-~ $ curl localhost:8080/sse -H"Accept: text/event-stream"
-
 data: HelloWorld
 ```
 
